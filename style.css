@@ -1,0 +1,1218 @@
+/* line 1, style.scss */
+.clearfix {
+  *zoom: 1; }
+  /* line 4, style.scss */
+  .clearfix:before, .clearfix:after {
+    display: table;
+    content: "";
+    line-height: 0; }
+  /* line 11, style.scss */
+  .clearfix:after {
+    clear: both; }
+
+/* line 16, style.scss */
+body {
+  margin: 0;
+  padding: 0;
+  background: #15abf9; }
+
+/* line 22, style.scss */
+#container {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  min-width: 1280px; }
+  /* line 27, style.scss */
+  #container .header-wrap {
+    position: absolute;
+    width: 1080px;
+    left: 50%;
+    height: 1px;
+    margin-left: -540px;
+    z-index: 100; }
+    /* line 34, style.scss */
+    #container .header-wrap #header {
+      position: absolute !important;
+      left: 0px !important; }
+  /* line 39, style.scss */
+  #container #header {
+    position: fixed;
+    top: 0;
+    left: 100px;
+    width: 280px;
+    border-top: 5px solid #15abf9;
+    background: url(/wp-content/themes/ibr/images/glass.png);
+    z-index: 100; }
+    /* line 47, style.scss */
+    #container #header.inside {
+      position: absolute !important; }
+    /* line 50, style.scss */
+    #container #header.rolling {
+      margin-right: 680px; }
+    /* line 53, style.scss */
+    #container #header #logo {
+      margin: 15px 15px 30px;
+      width: 230px;
+      height: 93px; }
+      /* line 57, style.scss */
+      #container #header #logo h1 {
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        background: url(/wp-content/themes/ibr/images/logo.png) no-repeat 0 0; }
+        /* line 63, style.scss */
+        #container #header #logo h1 a {
+          display: block;
+          height: 100%;
+          width: 100%; }
+          /* line 67, style.scss */
+          #container #header #logo h1 a span {
+            display: none; }
+    /* line 73, style.scss */
+    #container #header #menu {
+      margin: 15px 15px 25px; }
+      /* line 75, style.scss */
+      #container #header #menu ul {
+        margin: 0;
+        padding: 0;
+        list-style: none; }
+        /* line 79, style.scss */
+        #container #header #menu ul li {
+          padding: 0;
+          margin: 0;
+          height: 30px;
+          overflow: hidden;
+          -transition: height .5s ease;
+          -o-transition: height .5s ease;
+          -moz-transition: height .5s ease;
+          -webkit-transition: height 0.5s ease; }
+          /* line 88, style.scss */
+          #container #header #menu ul li a {
+            font-size: 20px;
+            line-height: 30px;
+            font-weight: 300;
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase; }
+            /* line 95, style.scss */
+            #container #header #menu ul li a:hover {
+              color: #0988f6; }
+          /* line 99, style.scss */
+          #container #header #menu ul li ul li {
+            height: auto;
+            overflow: auto; }
+            /* line 102, style.scss */
+            #container #header #menu ul li ul li a {
+              font-size: 14px;
+              line-height: 12px;
+              text-transform: capitalize; }
+              /* line 106, style.scss */
+              #container #header #menu ul li ul li a:hover {
+                color: #0988f6; }
+    /* line 114, style.scss */
+    #container #header #secondary {
+      height: 40px;
+      background: #0988f6; }
+      /* line 117, style.scss */
+      #container #header #secondary ul {
+        margin: 0;
+        padding: 0;
+        list-style: none; }
+        /* line 121, style.scss */
+        #container #header #secondary ul li {
+          float: left;
+          height: 27px;
+          margin: 5px 0 0 20px;
+          padding: 0;
+          opacity: .7; }
+          /* line 127, style.scss */
+          #container #header #secondary ul li a {
+            display: block;
+            height: 100%;
+            width: 100%; }
+            /* line 131, style.scss */
+            #container #header #secondary ul li a span {
+              display: none; }
+          /* line 135, style.scss */
+          #container #header #secondary ul li.calendar {
+            width: 22px;
+            background: url(/wp-content/themes/ibr/images/icons.png) 0 0; }
+          /* line 139, style.scss */
+          #container #header #secondary ul li.photo {
+            width: 29px;
+            background: url(/wp-content/themes/ibr/images/icons.png) -27px 2px; }
+          /* line 143, style.scss */
+          #container #header #secondary ul li.video {
+            width: 19px;
+            background: url(/wp-content/themes/ibr/images/icons.png) -61px 2px; }
+          /* line 147, style.scss */
+          #container #header #secondary ul li.tour {
+            width: 18px;
+            background: url(/wp-content/themes/ibr/images/icons.png) -148px 0; }
+          /* line 151, style.scss */
+          #container #header #secondary ul li.mail {
+            width: 26px;
+            background: url(/wp-content/themes/ibr/images/icons.png) -84px 5px; }
+          /* line 155, style.scss */
+          #container #header #secondary ul li.weather {
+            position: relative;
+            width: 27px;
+            background: url(/wp-content/themes/ibr/images/icons.png) -116px 0; }
+            /* line 159, style.scss */
+            #container #header #secondary ul li.weather.on {
+              opacity: 1 !important; }
+          /* line 161, style.scss */
+          #container #header #secondary ul li:hover {
+            opacity: 1 !important; }
+  /* line 169, style.scss */
+  #container #book .buttonwrap, #container #tour .buttonwrap {
+    width: 320px; }
+  /* line 171, style.scss */
+  #container #book {
+    position: fixed;
+    top: 50px;
+    padding: 10px;
+    right: 0px;
+    background: #fe126f;
+    z-index: 5;
+    width: 220px;
+    opacity: 1;
+    -transition: opacity 1s, width .3s ease;
+    -webkit-transition: opacity 1s, width .3s ease;
+    overflow: hidden; }
+    /* line 183, style.scss */
+    #container #book.inside {
+      width: 20px !important;
+      opacity: .7 !important; }
+    /* line 187, style.scss */
+    #container #book:hover {
+      opacity: 1 !important;
+      width: 220px !important; }
+    /* line 191, style.scss */
+    #container #book .calendar {
+      width: 22px;
+      height: 27px;
+      background: url(/wp-content/themes/ibr/images/icons.png) no-repeat 0 0;
+      float: left; }
+    /* line 197, style.scss */
+    #container #book h2 {
+      float: left;
+      margin: 0 0 0 10px;
+      padding: 0 25px 0 0;
+      background: url(/wp-content/themes/ibr/images/arrow.png) no-repeat right center;
+      font-size: 20px;
+      line-height: 28px;
+      font-weight: 200;
+      color: #fff;
+      width: 160px; }
+    /* line 208, style.scss */
+    #container #book a {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%; }
+  /* line 217, style.scss */
+  #container #tour {
+    position: fixed;
+    top: 108px;
+    padding: 10px;
+    right: 0px;
+    background: #ffa415;
+    z-index: 5;
+    width: 20px;
+    opacity: .7;
+    overflow: hidden;
+    -transition: opacity 1s, width .3s ease;
+    -webkit-transition: opacity 1s, width .3s ease; }
+    /* line 229, style.scss */
+    #container #tour.inside {
+      width: 20px !important; }
+    /* line 230, style.scss */
+    #container #tour:hover {
+      opacity: 1;
+      width: 220px !important; }
+    /* line 234, style.scss */
+    #container #tour .foot {
+      width: 22px;
+      height: 27px;
+      background: url(/wp-content/themes/ibr/images/icons.png) no-repeat -148px 0;
+      float: left; }
+    /* line 240, style.scss */
+    #container #tour h2 {
+      float: left;
+      margin: 0 0 0 10px;
+      padding: 0 25px 0 0;
+      background: url(/wp-content/themes/ibr/images/arrow.png) no-repeat right center;
+      font-size: 20px;
+      line-height: 28px;
+      font-weight: 200;
+      color: #fff;
+      width: 160px; }
+    /* line 251, style.scss */
+    #container #tour a {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%; }
+  /* line 260, style.scss */
+  #container #spread {
+    height: 100%;
+    width: 100%;
+    position: absolute; }
+  /* line 265, style.scss */
+  #container #footer {
+    position: absolute;
+    bottom: -445px;
+    left: 0;
+    background: #15abf9;
+    height: 520px;
+    width: 100%;
+    z-index: 100; }
+    /* line 273, style.scss */
+    #container #footer.inside {
+      position: relative !important;
+      bottom: auto !important;
+      left: auto !important; }
+    /* line 278, style.scss */
+    #container #footer.tour {
+      z-index: 99999999999 !important;
+      bottom: -445px !important;
+      left: 0 !important;
+      position: fixed !important; }
+    /* line 284, style.scss */
+    #container #footer .row-one {
+      height: 75px;
+      border-bottom: 1px solid #8ad5fc;
+      margin: 0 auto;
+      width: 1080px;
+      position: relative; }
+      /* line 290, style.scss */
+      #container #footer .row-one h1 {
+        height: 75px;
+        background: url(/wp-content/themes/ibr/images/footer-logo.png) no-repeat left center;
+        padding: 0;
+        margin: 0;
+        width: 470px; }
+        /* line 296, style.scss */
+        #container #footer .row-one h1 a {
+          height: 100%;
+          width: 100%;
+          display: block; }
+          /* line 300, style.scss */
+          #container #footer .row-one h1 a span {
+            display: none; }
+      /* line 305, style.scss */
+      #container #footer .row-one #follow {
+        position: absolute;
+        top: 25px;
+        right: 0; }
+        /* line 309, style.scss */
+        #container #footer .row-one #follow ul {
+          list-style: none;
+          margin: 0;
+          padding: 0; }
+          /* line 313, style.scss */
+          #container #footer .row-one #follow ul li {
+            float: left;
+            height: 26px;
+            line-height: 26px;
+            font-size: 14px;
+            font-weight: 500;
+            color: #fff;
+            margin: 0 10px 0 0; }
+            /* line 321, style.scss */
+            #container #footer .row-one #follow ul li.facebook, #container #footer .row-one #follow ul li.youtube, #container #footer .row-one #follow ul li.twitter {
+              opacity: 0.7; }
+            /* line 324, style.scss */
+            #container #footer .row-one #follow ul li:hover {
+              opacity: 1; }
+            /* line 327, style.scss */
+            #container #footer .row-one #follow ul li a {
+              display: block;
+              height: 100%;
+              width: 100%; }
+              /* line 331, style.scss */
+              #container #footer .row-one #follow ul li a span {
+                display: none; }
+            /* line 335, style.scss */
+            #container #footer .row-one #follow ul li.facebook {
+              width: 24px;
+              background: url(/wp-content/themes/ibr/images/social.png) no-repeat 0 0; }
+            /* line 339, style.scss */
+            #container #footer .row-one #follow ul li.youtube {
+              width: 22px;
+              background: url(/wp-content/themes/ibr/images/social.png) no-repeat -29px 0; }
+            /* line 343, style.scss */
+            #container #footer .row-one #follow ul li.twitter {
+              width: 30px;
+              background: url(/wp-content/themes/ibr/images/social.png) no-repeat -56px 0; }
+    /* line 351, style.scss */
+    #container #footer .row-two {
+      position: relative;
+      margin: 25px auto;
+      width: 1080px; }
+      /* line 355, style.scss */
+      #container #footer .row-two .left {
+        float: left;
+        width: 75%; }
+        /* line 358, style.scss */
+        #container #footer .row-two .left span {
+          font-size: 24px;
+          line-height: 30px;
+          color: #fff;
+          display: block;
+          font-weight: 400; }
+          /* line 364, style.scss */
+          #container #footer .row-two .left span:nth-child(2) {
+            font-weight: 100;
+            font-size: 16px;
+            line-height: 22px; }
+          /* line 369, style.scss */
+          #container #footer .row-two .left span a {
+            color: #afe3fe;
+            text-decoration: none; }
+            /* line 372, style.scss */
+            #container #footer .row-two .left span a:hover {
+              color: #05293d; }
+      /* line 378, style.scss */
+      #container #footer .row-two #trip, #container #footer .row-two #TA_excellent472 {
+        float: right; }
+    /* line 382, style.scss */
+    #container #footer .row-three {
+      background: #0988f6;
+      padding: 25px 0; }
+      /* line 385, style.scss */
+      #container #footer .row-three .wrap {
+        margin: 0 auto;
+        width: 1080px; }
+      /* line 389, style.scss */
+      #container #footer .row-three .col {
+        float: left;
+        margin-right: 22px; }
+        /* line 392, style.scss */
+        #container #footer .row-three .col ul {
+          list-style: none;
+          margin: 0;
+          padding: 0; }
+          /* line 396, style.scss */
+          #container #footer .row-three .col ul li {
+            font-size: 12px;
+            line-height: 16px;
+            margin: 0;
+            padding: 0; }
+            /* line 401, style.scss */
+            #container #footer .row-three .col ul li.parent {
+              text-transform: uppercase;
+              padding-bottom: 10px;
+              font-weight: 600; }
+            /* line 406, style.scss */
+            #container #footer .row-three .col ul li a {
+              color: #fff;
+              text-decoration: none; }
+              /* line 409, style.scss */
+              #container #footer .row-three .col ul li a:hover {
+                opacity: 0.8; }
+    /* line 417, style.scss */
+    #container #footer .row-four {
+      margin: 25px auto;
+      width: 1080px; }
+      /* line 420, style.scss */
+      #container #footer .row-four .left {
+        float: left; }
+      /* line 423, style.scss */
+      #container #footer .row-four .right {
+        float: right; }
+      /* line 426, style.scss */
+      #container #footer .row-four span {
+        color: #fff;
+        font-size: 12px;
+        line-height: 18px; }
+        /* line 430, style.scss */
+        #container #footer .row-four span a {
+          color: #fff;
+          text-decoration: none;
+          border-bottom: 1px solid #8ad5fc; }
+  /* line 438, style.scss */
+  #container #content {
+    background: white; }
+    /* line 441, style.scss */
+    #container #content.roll-bg {
+      background: white url(/wp-content/themes/ibr/images/blog.jpg) no-repeat top center; }
+    /* line 445, style.scss */
+    #container #content.iyr #page ul li.current_page_item {
+      border-bottom: 10px solid #fe126f; }
+    /* line 446, style.scss */
+    #container #content.car #page ul li.current_page_item {
+      border-bottom: 10px solid #f31a13; }
+    /* line 447, style.scss */
+    #container #content.ear #page ul li.current_page_item {
+      border-bottom: 10px solid #86c62c; }
+    /* line 448, style.scss */
+    #container #content.lub #page ul li.current_page_item {
+      border-bottom: 10px solid #15e1f9; }
+    /* line 449, style.scss */
+    #container #content.msp #page ul li.current_page_item {
+      border-bottom: 10px solid #aa30a0; }
+    /* line 451, style.scss */
+    #container #content.iyr #mast .copy {
+      background: rgba(254, 18, 111, 0.8); }
+    /* line 452, style.scss */
+    #container #content.car #mast .copy {
+      background: rgba(243, 26, 19, 0.8); }
+    /* line 453, style.scss */
+    #container #content.ear #mast .copy {
+      background: rgba(134, 198, 44, 0.8); }
+    /* line 454, style.scss */
+    #container #content.lub #mast .copy {
+      background: rgba(21, 225, 249, 0.8); }
+    /* line 455, style.scss */
+    #container #content.msp #mast .copy {
+      background: rgba(170, 48, 160, 0.8); }
+    /* line 458, style.scss */
+    #container #content.itn h2 {
+      color: #15abf9 !important; }
+    /* line 460, style.scss */
+    #container #content.itn p a {
+      color: #15abf9;
+      text-decoration: none; }
+    /* line 467, style.scss */
+    #container #content.rc h2 {
+      color: #15abf9 !important; }
+      /* line 469, style.scss */
+      #container #content.rc h2 span {
+        color: #fe126f !important; }
+    /* line 472, style.scss */
+    #container #content.rc p a {
+      color: #15abf9;
+      text-decoration: none; }
+    /* line 480, style.scss */
+    #container #content.iyr #page .main p span {
+      color: #fe126f; }
+    /* line 481, style.scss */
+    #container #content.iyr #page .main p a {
+      opacity: .9;
+      text-decoration: none; }
+      /* line 484, style.scss */
+      #container #content.iyr #page .main p a:hover {
+        opacity: 1; }
+    /* line 489, style.scss */
+    #container #content.car #page .main p span {
+      color: #f31a13; }
+    /* line 490, style.scss */
+    #container #content.car #page .main p a {
+      opacity: .9;
+      text-decoration: none; }
+      /* line 493, style.scss */
+      #container #content.car #page .main p a:hover {
+        opacity: 1; }
+    /* line 498, style.scss */
+    #container #content.ear #page .main p span {
+      color: #86c62c; }
+    /* line 499, style.scss */
+    #container #content.ear #page .main p a {
+      opacity: .9;
+      text-decoration: none; }
+      /* line 502, style.scss */
+      #container #content.ear #page .main p a:hover {
+        opacity: 1; }
+    /* line 507, style.scss */
+    #container #content.lub #page .main p span {
+      color: #15e1f9; }
+    /* line 508, style.scss */
+    #container #content.lub #page .main p a {
+      opacity: .9;
+      text-decoration: none; }
+      /* line 511, style.scss */
+      #container #content.lub #page .main p a:hover {
+        opacity: 1; }
+    /* line 516, style.scss */
+    #container #content.msp #page .main p span {
+      color: #aa30a0; }
+    /* line 517, style.scss */
+    #container #content.msp #page .main p a {
+      opacity: .9;
+      text-decoration: none; }
+      /* line 520, style.scss */
+      #container #content.msp #page .main p a:hover {
+        opacity: 1; }
+    /* line 524, style.scss */
+    #container #content #mast {
+      position: relative;
+      height: 600px;
+      width: 100%; }
+      /* line 528, style.scss */
+      #container #content #mast .see-that-area {
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+        background: #95cb35 !important;
+        opacity: .8; }
+        /* line 536, style.scss */
+        #container #content #mast .see-that-area:hover {
+          opacity: 1; }
+        /* line 537, style.scss */
+        #container #content #mast .see-that-area a {
+          height: 100%;
+          width: 100%;
+          display: block;
+          background: url(/wp-content/themes/ibr/images/icon-eye.png) no-repeat center center !important; }
+          /* line 542, style.scss */
+          #container #content #mast .see-that-area a span {
+            display: none; }
+      /* line 547, style.scss */
+      #container #content #mast .headline {
+        position: absolute;
+        right: 0;
+        top: 150px;
+        width: 50%; }
+        /* line 552, style.scss */
+        #container #content #mast .headline h3 {
+          font-size: 50px;
+          line-height: 50px;
+          font-weight: 100;
+          color: #fff;
+          margin: 0 0 20px;
+          padding: 0;
+          text-shadow: 0 0 20px rgba(0, 0, 0, 0.8); }
+        /* line 561, style.scss */
+        #container #content #mast .headline .copy {
+          padding: 20px; }
+          /* line 563, style.scss */
+          #container #content #mast .headline .copy p {
+            font-size: 16px;
+            line-height: 20px;
+            color: #fff;
+            margin: 0;
+            padding: 0; }
+        /* line 571, style.scss */
+        #container #content #mast .headline a {
+          color: #fff;
+          text-transform: uppercase;
+          line-height: 60px;
+          font-size: 18px;
+          margin-right: 20px;
+          padding-right: 14px;
+          background: url(/wp-content/themes/ibr/images/arrow-orange.png) repeat-x right center;
+          text-decoration: none;
+          text-shadow: 0 0 20px rgba(0, 0, 0, 0.8); }
+    /* line 584, style.scss */
+    #container #content #roll {
+      width: 1080px;
+      margin: 0 auto;
+      position: relative;
+      padding: 0px 0px 150px 0px; }
+      /* line 589, style.scss */
+      #container #content #roll .posts {
+        float: right;
+        width: 600px;
+        margin: 240px 150px 0px 0px; }
+        /* line 593, style.scss */
+        #container #content #roll .posts h2 {
+          font-size: 28px;
+          line-height: 28px;
+          margin: 35px 0px 15px;
+          padding: 0px;
+          margin: 0;
+          display: inline;
+          font-weight: 100;
+          color: #15abf9;
+          text-transform: uppercase; }
+        /* line 604, style.scss */
+        #container #content #roll .posts .post {
+          border-top: 1px solid #cecece;
+          padding: 20px 0px 0px;
+          margin: 20px 0px 0px; }
+          /* line 608, style.scss */
+          #container #content #roll .posts .post .featured {
+            height: 300px;
+            width: 600px; }
+          /* line 612, style.scss */
+          #container #content #roll .posts .post h2 {
+            font-size: 28px;
+            line-height: 28px;
+            padding: 15px 0px;
+            margin: 0px;
+            margin: 0;
+            display: block;
+            font-weight: 100;
+            color: #15abf9;
+            text-transform: none; }
+            /* line 622, style.scss */
+            #container #content #roll .posts .post h2 span {
+              font-size: 18px;
+              line-height: 22px;
+              display: block;
+              font-weight: 600;
+              text-transform: uppercase; }
+          /* line 630, style.scss */
+          #container #content #roll .posts .post p {
+            margin: 0 0 20px;
+            padding: 0;
+            font-size: 14px;
+            line-height: 20px;
+            color: #666666;
+            clear: both; }
+    /* line 642, style.scss */
+    #container #content #page {
+      width: 1080px;
+      margin: 0 auto; }
+      /* line 646, style.scss */
+      #container #content #page h2 {
+        margin: 0;
+        padding: 0;
+        display: inline;
+        font-size: 28px;
+        line-height: 60px;
+        float: left;
+        text-transform: uppercase;
+        font-weight: 100;
+        color: #15abf9; }
+        /* line 656, style.scss */
+        #container #content #page h2 a {
+          color: #15abf9;
+          text-decoration: none; }
+      /* line 661, style.scss */
+      #container #content #page ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        float: right;
+        height: 60px; }
+        /* line 667, style.scss */
+        #container #content #page ul li {
+          font-size: 14px;
+          text-transform: uppercase;
+          line-height: 60px;
+          height: 55px;
+          float: left;
+          margin: 0 0 0 30px; }
+          /* line 675, style.scss */
+          #container #content #page ul li a {
+            color: #666;
+            text-decoration: none;
+            display: block;
+            height: 100%;
+            width: 100%; }
+            /* line 681, style.scss */
+            #container #content #page ul li a:hover {
+              color: #15abf9; }
+      /* line 685, style.scss */
+      #container #content #page .featured {
+        height: 320px;
+        width: 1080px;
+        position: relative;
+        display: none;
+        border-bottom: 10px solid #15abf9; }
+        /* line 691, style.scss */
+        #container #content #page .featured h3 {
+          position: absolute;
+          bottom: 20px;
+          left: 40px;
+          font-size: 36px;
+          line-height: 36px;
+          color: #fff;
+          font-weight: 400;
+          text-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+          margin: 0px;
+          padding: 0px; }
+        /* line 703, style.scss */
+        #container #content #page .featured .see-that-area {
+          width: 40px;
+          height: 40px;
+          position: absolute;
+          bottom: 0px;
+          right: 0px;
+          background: #95cb35 !important;
+          opacity: .8; }
+          /* line 711, style.scss */
+          #container #content #page .featured .see-that-area:hover {
+            opacity: 1; }
+          /* line 712, style.scss */
+          #container #content #page .featured .see-that-area a {
+            height: 100%;
+            width: 100%;
+            display: block;
+            background: url(/wp-content/themes/ibr/images/icon-eye.png) no-repeat center center !important; }
+            /* line 717, style.scss */
+            #container #content #page .featured .see-that-area a span {
+              display: none; }
+      /* line 723, style.scss */
+      #container #content #page .main {
+        position: relative;
+        margin: 25px 0;
+        display: none; }
+        /* line 727, style.scss */
+        #container #content #page .main .copy {
+          width: 580px;
+          float: left; }
+          /* line 730, style.scss */
+          #container #content #page .main .copy p {
+            margin: 0 0 20px;
+            padding: 0;
+            font-size: 14px;
+            line-height: 20px;
+            color: #666666;
+            clear: both; }
+            /* line 737, style.scss */
+            #container #content #page .main .copy p a {
+              color: #15abf9; }
+            /* line 740, style.scss */
+            #container #content #page .main .copy p strong {
+              color: #333333;
+              font-weight: 600; }
+            /* line 744, style.scss */
+            #container #content #page .main .copy p span {
+              font-size: 24px;
+              line-height: 30px;
+              font-weight: 100; }
+          /* line 753, style.scss */
+          #container #content #page .main .copy .back-to-top h4 {
+            margin: 40px 0px 80px;
+            padding: 0px 0px 0px 0px;
+            display: inline-block;
+            font-size: 16px;
+            line-height: 20px;
+            font-weight: 100;
+            text-transform: uppercase;
+            background: url(/wp-content/themes/ibr/images/totop.png) no-repeat left center;
+            opacity: .75;
+            -transition: opacity 1s;
+            -webkit-transition: opacity 1s; }
+            /* line 765, style.scss */
+            #container #content #page .main .copy .back-to-top h4:hover {
+              opacity: 1; }
+            /* line 766, style.scss */
+            #container #content #page .main .copy .back-to-top h4 a {
+              height: 100%;
+              width: 100%;
+              display: block;
+              color: #666666;
+              text-decoration: none;
+              padding: 0px 0px 0px 30px !important; }
+        /* line 777, style.scss */
+        #container #content #page .main .third {
+          width: 400px;
+          margin: 0px;
+          padding: 0px;
+          position: absolute;
+          top: 0px;
+          right: 0px;
+          text-align: right; }
+
+/* line 791, style.scss */
+.accordion {
+  height: 32px;
+  border-bottom: 1px dashed #cecece;
+  margin: 0px;
+  overflow: hidden; }
+  /* line 796, style.scss */
+  .accordion h5 {
+    font-size: 14px;
+    line-height: 32px;
+    margin: 0px;
+    padding: 0px;
+    font-weight: 600;
+    background: url(/wp-content/themes/ibr/images/accordion-down.png) no-repeat right center; }
+    /* line 803, style.scss */
+    .accordion h5.toggle {
+      background: url(/wp-content/themes/ibr/images/accordion-up.png) no-repeat right center; }
+    /* line 804, style.scss */
+    .accordion h5.toggle a, .accordion h5 a:hover {
+      color: #15abf9; }
+    /* line 805, style.scss */
+    .accordion h5 a {
+      color: #666666;
+      text-decoration: none;
+      display: block;
+      height: 100%;
+      width: 100%; }
+
+/* line 814, style.scss */
+.button {
+  opacity: .8;
+  -transition: opacity 1s;
+  -webkit-transition: opacity 1s;
+  display: inline-block;
+  margin-right: 20px; }
+  /* line 821, style.scss */
+  .button:hover {
+    opacity: 1; }
+  /* line 822, style.scss */
+  .button h4 {
+    display: inline-block;
+    font-size: 12px;
+    line-height: 34px;
+    padding: 0px;
+    font-weight: 100;
+    background: #15abf9;
+    margin: 0px; }
+    /* line 830, style.scss */
+    .button h4 a {
+      color: #ffffff;
+      text-decoration: none;
+      height: 100%;
+      width: 100%;
+      display: block;
+      padding: 0px 10px 0px 10px; }
+      /* line 837, style.scss */
+      .button h4 a span {
+        padding-right: 20px;
+        background: #15abf9 url(/wp-content/themes/ibr/images/arrow-small.png) no-repeat right center; }
+
+/* line 845, style.scss */
+.photo-button {
+  float: left; }
+  /* line 847, style.scss */
+  .photo-button h4 {
+    background: #15abf9 !important; }
+    /* line 850, style.scss */
+    .photo-button h4 a span {
+      padding: 0px 0px 0px 30px !important;
+      background: url(/wp-content/themes/ibr/images/icon-photos.png) no-repeat left center !important; }
+
+/* line 858, style.scss */
+.tour-button {
+  float: left; }
+  /* line 860, style.scss */
+  .tour-button h4 {
+    background: #95cb35 !important; }
+    /* line 863, style.scss */
+    .tour-button h4 a span {
+      padding: 0px 0px 0px 30px !important;
+      background: url(/wp-content/themes/ibr/images/icon-eye.png) no-repeat left center !important; }
+
+/* line 871, style.scss */
+.plan-button {
+  float: left;
+  margin-bottom: 40px; }
+  /* line 874, style.scss */
+  .plan-button h4 {
+    background: #ffa415 !important; }
+    /* line 877, style.scss */
+    .plan-button h4 a span {
+      padding: 0px 0px 0px 30px !important;
+      background: url(/wp-content/themes/ibr/images/icon-floorplan.png) no-repeat left center !important; }
+
+/* line 885, style.scss */
+.popup-overlay {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 9999999;
+  display: none; }
+
+/* line 895, style.scss */
+.popup-box {
+  height: 600px;
+  width: 800px;
+  border: 3px solid #ffffff;
+  box-shadow: 0px 0px 50px 10px rgba(0, 0, 0, 0.9);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin: -300px 0px 0px -400px;
+  z-index: 99999999;
+  display: none; }
+  /* line 907, style.scss */
+  .popup-box .popup-arrows .left {
+    left: -60px;
+    background: url(/wp-content/themes/ibr/images/popup-arrows.png) 0px 0px; }
+  /* line 911, style.scss */
+  .popup-box .popup-arrows .right {
+    right: -50px;
+    background: url(/wp-content/themes/ibr/images/popup-arrows.png) -25px 0px; }
+  /* line 915, style.scss */
+  .popup-box .popup-arrows .left, .popup-box .popup-arrows .right {
+    height: 109px;
+    width: 25px;
+    position: absolute;
+    z-index: 99999;
+    top: 50%;
+    margin: -54px 0px 0px 0px;
+    opacity: .8;
+    -transition: opacity 1s;
+    -webkit-transition: opacity 1s; }
+    /* line 925, style.scss */
+    .popup-box .popup-arrows .left:hover, .popup-box .popup-arrows .right:hover {
+      opacity: 1; }
+    /* line 926, style.scss */
+    .popup-box .popup-arrows .left a, .popup-box .popup-arrows .right a {
+      height: 100%;
+      width: 100%;
+      display: block; }
+      /* line 930, style.scss */
+      .popup-box .popup-arrows .left a span, .popup-box .popup-arrows .right a span {
+        display: none; }
+  /* line 934, style.scss */
+  .popup-box .popup-wrap {
+    height: 600px;
+    width: 800px;
+    overflow: hidden; }
+  /* line 939, style.scss */
+  .popup-box .popup-rewrap {
+    width: 20000px;
+    height: 600px; }
+    /* line 942, style.scss */
+    .popup-box .popup-rewrap ul {
+      list-style: none;
+      margin: 0px;
+      padding: 0px; }
+      /* line 946, style.scss */
+      .popup-box .popup-rewrap ul li {
+        float: left;
+        padding: 0px;
+        margin: 0px; }
+        /* line 950, style.scss */
+        .popup-box .popup-rewrap ul li img {
+          border: 0px;
+          width: 800px; }
+  /* line 957, style.scss */
+  .popup-box .popup-close {
+    position: absolute;
+    bottom: -50px;
+    z-index: 99999;
+    text-align: center;
+    width: 100%;
+    display: none; }
+    /* line 964, style.scss */
+    .popup-box .popup-close a {
+      font-size: 22px;
+      text-transform: uppercase;
+      color: #ffffff;
+      line-height: 50px;
+      text-decoration: none;
+      text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8); }
+
+/* line 976, style.scss */
+.popup-video {
+  display: none;
+  width: 800px;
+  height: 450px;
+  background: #000000;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin: -300px 0px 0px -400px;
+  z-index: 99999999;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.8); }
+  /* line 987, style.scss */
+  .popup-video .popup-video-playing {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 450px;
+    width: 800px;
+    overflow: hidden; }
+  /* line 995, style.scss */
+  .popup-video .popup-video-list {
+    position: absolute;
+    bottom: -110px;
+    left: 0px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.8); }
+    /* line 1000, style.scss */
+    .popup-video .popup-video-list ul {
+      margin: 0px 0px;
+      padding: 15px 10px;
+      background: #000000;
+      list-style: none; }
+      /* line 1005, style.scss */
+      .popup-video .popup-video-list ul li {
+        float: left;
+        margin: 0px 5px;
+        padding: 0px;
+        height: 60px;
+        width: 120px;
+        overflow: hidden; }
+        /* line 1012, style.scss */
+        .popup-video .popup-video-list ul li a img {
+          border: 0px;
+          margin-top: -15px;
+          opacity: .5; }
+        /* line 1017, style.scss */
+        .popup-video .popup-video-list ul li a:hover img, .popup-video .popup-video-list ul li a.on img {
+          opacity: 1; }
+  /* line 1021, style.scss */
+  .popup-video .popup-close {
+    position: absolute;
+    bottom: -160px;
+    z-index: 99999;
+    text-align: center;
+    width: 100%;
+    display: none; }
+    /* line 1028, style.scss */
+    .popup-video .popup-close a {
+      font-size: 22px;
+      text-transform: uppercase;
+      color: #ffffff;
+      line-height: 50px;
+      text-decoration: none;
+      text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+      opacity: .6; }
+      /* line 1036, style.scss */
+      .popup-video .popup-close a:hover {
+        opacity: 1; }
+
+/* line 1042, style.scss */
+#loading {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  z-index: 99999999999999;
+  display: none;
+  background: #15abf9 url(/wp-content/themes/ibr/images/loading.gif) no-repeat center center; }
+
+/* line 1053, style.scss */
+#tourbox {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  z-index: 99999999;
+  display: none; }
+
+/* line 1063, style.scss */
+#tourclose {
+  position: fixed;
+  height: 70px;
+  width: 100%;
+  bottom: 75px;
+  left: 0px;
+  background: #006af3;
+  z-index: 999999999;
+  display: none;
+  text-align: center; }
+  /* line 1073, style.scss */
+  #tourclose .wrap {
+    width: 1080px;
+    margin: 0px auto;
+    position: relative; }
+    /* line 1077, style.scss */
+    #tourclose .wrap .tour-links {
+      position: absolute;
+      top: 10px;
+      left: 0px; }
+      /* line 1081, style.scss */
+      #tourclose .wrap .tour-links ul {
+        height: 25px;
+        list-style: none;
+        padding: 0px;
+        margin: 0px; }
+        /* line 1086, style.scss */
+        #tourclose .wrap .tour-links ul li {
+          line-height: 25px;
+          float: left;
+          padding: 0px;
+          margin: 0px 5px 0px 0px;
+          color: #ffffff;
+          font-size: 16px; }
+          /* line 1093, style.scss */
+          #tourclose .wrap .tour-links ul li strong {
+            text-transform: uppercase;
+            font-weight: 500; }
+          /* line 1097, style.scss */
+          #tourclose .wrap .tour-links ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            opacity: .8; }
+          /* line 1102, style.scss */
+          #tourclose .wrap .tour-links ul li.on a {
+            opacity: 1; }
+    /* line 1108, style.scss */
+    #tourclose .wrap .tour-close {
+      position: absolute;
+      top: 10px;
+      right: 12px; }
+      /* line 1112, style.scss */
+      #tourclose .wrap .tour-close a {
+        color: #ffffff;
+        font-size: 16px;
+        text-transform: uppercase;
+        text-decoration: none;
+        line-height: 25px; }
+
+/* line 1123, style.scss */
+.weather-popup {
+  position: absolute;
+  left: 45px;
+  top: -5px;
+  width: 250px;
+  background: #0988f6;
+  border: 5px solid #0988f6;
+  padding: 5px;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+  display: none; }
+  /* line 1135, style.scss */
+  .weather-popup .close {
+    position: absolute;
+    top: -30px;
+    right: -5px;
+    background: #0988f6;
+    height: 25px;
+    width: 25px;
+    text-align: center; }
+    /* line 1143, style.scss */
+    .weather-popup .close a {
+      font-size: 16px;
+      color: #ffffff;
+      font-family: 400;
+      text-decoration: none;
+      text-transform: uppercase;
+      line-height: 25px; }
+  /* line 1152, style.scss */
+  .weather-popup h2 {
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0px;
+    padding: 0px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 500; }
+  /* line 1162, style.scss */
+  .weather-popup img {
+    border: 3px solid white;
+    background: white;
+    border-radius: 3px;
+    float: left;
+    margin: 0px 10px 10px 0px; }
+  /* line 1170, style.scss */
+  .weather-popup span {
+    font-size: 16px;
+    line-height: 22px;
+    color: #ffffff; }
+  /* line 1176, style.scss */
+  .weather-popup .forecast {
+    background: #085aa1;
+    border: 5px solid #085aa1;
+    font-size: 12px;
+    line-height: 18px;
+    color: #ffffff;
+    clear: left;
+    padding: 5px; }
+    /* line 1184, style.scss */
+    .weather-popup .forecast h3 {
+      display: block;
+      font-size: 14px;
+      line-height: 20px;
+      margin: 0px;
+      padding: 0px;
+      color: #ffffff;
+      font-weight: 500;
+      text-transform: uppercase; }
+    /* line 1194, style.scss */
+    .weather-popup .forecast strong {
+      font-weight: 500; }

@@ -1,0 +1,531 @@
+.clearfix {
+  *zoom: 1;
+  &:before,
+  &:after {
+    display: table;
+    content: "";
+    // Fixes Opera/contenteditable bug:
+    // http://nicolasgallagher.com/micro-clearfix-hack/#comment-36952
+    line-height: 0;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #15abf9;
+}
+
+#container {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  min-width: 1280px;
+  #header {
+    position: fixed;
+    top: 0;
+    left: 100px;
+    width: 280px;
+    border-top: 5px solid #15abf9;
+    background: url(/wp-content/themes/ibr/images/glass.png);
+    z-index: 100;
+    &.inside {
+      position: absolute !important;
+    }
+    #logo {
+      margin: 15px 15px 30px;
+      width: 230px;
+      height: 93px;
+      h1 {
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        background: url(/wp-content/themes/ibr/images/logo.png) no-repeat 0 0;
+        a {
+          display: block;
+          height: 100%;
+          width: 100%;
+          span {
+            display: none;
+          }
+        }
+      }
+    }//#logo
+    #menu {
+      margin: 15px 15px 25px;
+      ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        li {
+          padding: 0;
+          margin: 0;
+          height: 30px;
+          overflow: hidden;
+          -transition: height .5s ease;
+          -o-transition: height .5s ease;
+          -moz-transition: height .5s ease;
+          -webkit-transition: height 0.5s ease;
+          a {
+            font-size: 20px;
+            line-height: 30px;
+            font-weight: 300;
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            &:hover {
+              color: #0988f6;
+            }
+          }
+          ul li {
+            height: auto;
+            overflow: auto;
+            a {
+              font-size: 14px;
+              line-height: 18px;
+              text-transform: capitalize;
+              &:hover {
+                color: #0988f6;
+              }
+            }
+          }
+        }
+      }
+    }//#menu
+    #secondary {
+      height: 40px;
+      background: #0988f6;
+      ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        li {
+          float: left;
+          height: 27px;
+          margin: 5px 0 0 20px;
+          padding: 0;
+          a {
+            display: block;
+            height: 100%;
+            width: 100%;
+            span {
+              display: none;
+            }
+          }
+          &.calendar {
+            width: 22px;
+            background: url(/wp-content/themes/ibr/images/icons.png) 0 0;
+          }
+          &.photo {
+            width: 29px;
+            background: url(/wp-content/themes/ibr/images/icons.png) -27px 2px;
+          }
+          &.video {
+            width: 19px;
+            background: url(/wp-content/themes/ibr/images/icons.png) -61px 2px;
+          }
+          &.tour {
+            width: 18px;
+            background: url(/wp-content/themes/ibr/images/icons.png) -148px 0;
+          }
+          &.mail {
+            width: 26px;
+            background: url(/wp-content/themes/ibr/images/icons.png) -84px 5px;
+          }
+          &.weather {
+            width: 27px;
+            background: url(/wp-content/themes/ibr/images/icons.png) -116px 0;
+          }
+          &:hover {
+            opacity: 0.8;
+          }
+        }
+      }
+    }//#secondary
+  }//#header
+  #book {
+    position: fixed;
+    top: 230px;
+    padding: 20px;
+    right: 0;
+    background: #fe126f;
+    z-index: 5;
+    width: 300px;
+    opacity: .7;
+    -transition: opacity 1s;
+    -webkit-transition: opacity 1s;
+    &:hover {
+      opacity: 1;
+    }
+    .calendar {
+      width: 22px;
+      height: 27px;
+      background: url(/wp-content/themes/ibr/images/icons.png) no-repeat 0 0;
+      float: left;
+    }//.calendar
+    h2 {
+      float: left;
+      margin: 0 0 0 10px;
+      padding: 0 25px 0 0;
+      background: url(/wp-content/themes/ibr/images/arrow.png) no-repeat right center;
+      font-size: 24px;
+      line-height: 28px;
+      font-weight: 200;
+      color: #fff;
+      width: 238px;
+    }
+    a {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+    }
+  }//#book
+  #tour {
+    position: fixed;
+    top: 313px;
+    padding: 20px;
+    right: 0;
+    background: #ffa415;
+    z-index: 5;
+    width: 300px;
+    opacity: .7;
+    -transition: opacity 1s;
+    -webkit-transition: opacity 1s;
+    &:hover {
+      opacity: 1;
+    }
+    .foot {
+      width: 22px;
+      height: 27px;
+      background: url(/wp-content/themes/ibr/images/icons.png) no-repeat -148px 0;
+      float: left;
+    }
+    h2 {
+      float: left;
+      margin: 0 0 0 10px;
+      padding: 0 25px 0 0;
+      background: url(/wp-content/themes/ibr/images/arrow.png) no-repeat right center;
+      font-size: 24px;
+      line-height: 28px;
+      font-weight: 200;
+      color: #fff;
+      width: 238px;
+    }
+    a {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+    }
+  }//#tour
+  #spread {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+  }
+  #footer {
+    position: absolute;
+    bottom: -445px;
+    left: 0;
+    background: #15abf9;
+    height: 520px;
+    width: 100%;
+    z-index: 100;
+    &.inside {
+      position: relative !important;
+      bottom: auto !important;
+      left: auto !important;
+    }
+    .row-one {
+      height: 75px;
+      border-bottom: 1px solid #8ad5fc;
+      margin: 0 auto;
+      width: 1080px;
+      position: relative;
+      h1 {
+        height: 75px;
+        background: url(/wp-content/themes/ibr/images/footer-logo.png) no-repeat left center;
+        padding: 0;
+        margin: 0;
+        width: 470px;
+        a {
+          height: 100%;
+          width: 100%;
+          display: block;
+          span {
+            display: none;
+          }
+        }
+      }
+      #follow {
+        position: absolute;
+        top: 25px;
+        right: 0;
+        ul {
+          list-style: none;
+          margin: 0;
+          padding: 0;
+          li {
+            float: left;
+            height: 26px;
+            line-height: 26px;
+            font-size: 14px;
+            font-weight: 500;
+            color: #fff;
+            margin: 0 10px 0 0;
+            &.facebook, &.youtube, &.twitter {
+              opacity: 0.7;
+            }
+            &:hover {
+              opacity: 1;
+            }
+            a {
+              display: block;
+              height: 100%;
+              width: 100%;
+              span {
+                display: none;
+              }
+            }
+            &.facebook {
+              width: 24px;
+              background: url(/wp-content/themes/ibr/images/social.png) no-repeat 0 0;
+            }
+            &.youtube {
+              width: 22px;
+              background: url(/wp-content/themes/ibr/images/social.png) no-repeat -29px 0;
+            }
+            &.twitter {
+              width: 30px;
+              background: url(/wp-content/themes/ibr/images/social.png) no-repeat -56px 0;
+            }
+          }
+        }
+      }//#follow
+    }//.row-one
+    .row-two {
+      position: relative;
+      margin: 25px auto;
+      width: 1080px;
+      .left {
+        float: left;
+        width: 75%;
+        span {
+          font-size: 24px;
+          line-height: 30px;
+          color: #fff;
+          display: block;
+          font-weight: 400;
+          &:nth-child(2) {
+            font-weight: 100;
+            font-size: 16px;
+            line-height: 22px;
+          }
+          a {
+            color: #afe3fe;
+            text-decoration: none;
+            &:hover {
+              color: #05293d;
+            }
+          }
+        }
+      }
+      #trip {
+        float: right;
+      }//#trip
+    }//.row-two
+    .row-three {
+      background: #0988f6;
+      padding: 25px 0;
+      .wrap {
+        margin: 0 auto;
+        width: 1080px;
+      }
+      .col {
+        float: left;
+        margin-right: 20px;
+        ul {
+          list-style: none;
+          margin: 0;
+          padding: 0;
+          li {
+            font-size: 12px;
+            line-height: 16px;
+            margin: 0;
+            padding: 0;
+            &.parent {
+              text-transform: uppercase;
+              padding-bottom: 10px;
+              font-weight: 600;
+            }
+            a {
+              color: #fff;
+              text-decoration: none;
+              &:hover {
+                opacity: 0.8;
+              }
+            }
+          }
+        }
+      }//.col
+    }//.row-three
+    .row-four {
+      margin: 25px auto;
+      width: 1080px;
+      .left {
+        float: left;
+      }
+      .right {
+        float: right;
+      }
+      span {
+        color: #fff;
+        font-size: 12px;
+        line-height: 18px;
+        a {
+          color: #fff;
+          text-decoration: none;
+          border-bottom: 1px solid #8ad5fc;
+        }
+      }
+    }//.row-four
+  }
+  #content {
+    background: white;
+    #mast {
+      position: relative;
+      height: 600px;
+      width: 100%;
+      .headline {
+        position: absolute;
+        right: 0;
+        top: 100px;
+        width: 50%;
+        h3 {
+          font-size: 50px;
+          line-height: 50px;
+          font-weight: 100;
+          color: #fff;
+          margin: 0 0 20px;
+          padding: 0;
+        }
+        .copy {
+          background: url(/wp-content/themes/ibr/images/pink.png);
+          padding: 20px;
+          p {
+            font-size: 16px;
+            line-height: 20px;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+          }
+        }//.copy
+        a {
+          color: #fff;
+          text-transform: uppercase;
+          line-height: 60px;
+          font-size: 18px;
+          margin-right: 20px;
+          padding-right: 14px;
+          background: url(/wp-content/themes/ibr/images/arrow-orange.png) no-repeat right center;
+          text-decoration: none;
+        }
+      }//.headline
+    }//#mast
+    #page {
+      width: 1080px;
+      margin: 0 auto;
+      h2 {
+        margin: 0;
+        padding: 0;
+        display: inline;
+        font-size: 28px;
+        line-height: 60px;
+        float: left;
+        text-transform: uppercase;
+        font-weight: 100;
+        color: #15abf9;
+        a {
+          color: #15abf9;
+          text-decoration: none;          
+        }
+      }
+      ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        float: right;
+        height: 60px;
+        li {
+          font-size: 14px;
+          text-transform: uppercase;
+          line-height: 60px;
+          height: 55px;
+          float: left;
+          margin: 0 0 0 30px;
+          &:hover, &.current_page_item {
+            border-bottom: 5px solid #fe126f;
+          }
+          a {
+            color: #666;
+            text-decoration: none;
+            display: block;
+            height: 100%;
+            width: 100%;
+          }
+        }
+      }
+      .featured {
+        height: 320px;
+        width: 1080px;
+        position: relative;
+        display: none;
+        h3 {
+          position: absolute;
+          bottom: 20px;
+          left: 40px;
+          font-size: 48px;
+          line-height: 48px;
+          color: #fff;
+          font-weight: 400;
+          text-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+		  margin: 0px;
+		  padding: 0px;
+        }
+      }//.featured
+      .main {
+        margin: 25px 0;
+        display: none;
+        .copy {
+          width: 580px;
+          float: left;
+          p {
+            margin: 0 0 20px;
+            padding: 0;
+            font-size: 14px;
+            line-height: 20px;
+            color: #333333;
+            strong {
+	            color: #222222;
+            }
+            span {
+              color: #fe126f;
+              font-size: 24px;
+              line-height: 30px;
+              font-weight: 100;
+            }
+          }
+        }//.copy
+      }//.main
+    }//#page
+  }//#content
+}//#container
